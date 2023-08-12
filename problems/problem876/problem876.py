@@ -9,4 +9,16 @@ class ListNode:
 
 class Solution:
     def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        pass
+        if head == None:
+            return None
+        pointer_1 = head
+        pointer_2 = head
+        while True:
+            if pointer_2.next == None:
+                return pointer_1
+            pointer_1 = pointer_1.next
+            pointer_2 = pointer_2.next
+
+            if pointer_2.next == None:
+                return pointer_1
+            pointer_2 = pointer_2.next
