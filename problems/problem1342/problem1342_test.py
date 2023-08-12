@@ -13,21 +13,21 @@ class TestStepCounter(unittest.TestCase):
 
         result = Solution().numberOfSteps(n)
         expected = 6
-        self.assertEquals(result, expected)
+        self.assertEqual(result, expected)
 
     def test_example_2(self):
         n = 8
 
         result = Solution().numberOfSteps(n)
         expected = 4
-        self.assertEquals(result, expected)
+        self.assertEqual(result, expected)
 
     def test_example_3(self):
         n = 123
 
         result = Solution().numberOfSteps(n)
         expected = 12
-        self.assertEquals(result, expected)
+        self.assertEqual(result, expected)
 
 
 if __name__ == "__main__":
