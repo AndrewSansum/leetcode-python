@@ -23,6 +23,10 @@ class TestMiddleNode(unittest.TestCase):
         result = Solution().middleNode(head)
         self.assertIs(result, head)
 
+    def test_no_head(self):
+        result = Solution().middleNode(None)
+        self.assertEqual(result, None)
+
 
 if __name__ == "__main__":
     unittest.main()
