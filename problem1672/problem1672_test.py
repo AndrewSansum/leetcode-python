@@ -1,6 +1,6 @@
 import unittest
 
-from problem1672.problem1672 import Solution
+from problem1672 import Solution
 
 
 class TestMaximumWealth(unittest.TestCase):
