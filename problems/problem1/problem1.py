@@ -3,4 +3,9 @@ from typing import List
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        pass
+        num_dict = {}
+        for i, num in enumerate(nums):
+            if num in num_dict:
+                return [i, num_dict[num]]
+
+            num_dict[target - num] = i
